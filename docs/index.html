@@ -3,53 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inicio · SILVA</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>SILVA · Bosques Vivos de Canarias</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-light">
-    <div class="nav-container">
-      <div class="logo">
-        <img src="images/logo-silva.jpg" alt="Logo SILVA" style="height: 50px;" />
-      </div>
-      <ul class="nav-menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="territorio.html">Territorio</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="participa.html">Participa</a></li>
-        <li><a href="impacto.html">Impacto</a></li>
-        <li><a href="silva.html">Silva</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+
+<!-- HEADER / HERO -->
+<header class="hero-section">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <img src="images/logo-silva.jpg" alt="Logo SILVA" class="hero-logo">
+    <h1>Reverdece el Planeta</h1>
+    <p>Unidos por la recuperación de nuestros bosques.</p>
+    <a href="#participa" class="btn-primary">ÚNETE A NOSOTROS</a>
+  </div>
+</header>
+
+<!-- SOBRE SILVA -->
+<section class="about-section">
+  <div class="about-image">
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80" alt="Bosque canario">
+  </div>
+  <div class="about-text">
+    <h2>Sobre SILVA</h2>
+    <p>Somos una asociación dedicada a la regeneración de los bosques canarios. Trabajamos para restaurar la naturaleza y fomentar un uso sostenible del territorio.</p>
+  </div>
+</section>
+
+<!-- NUESTROS PROYECTOS -->
+<section class="projects-section">
+  <h2>Nuestros Proyectos</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1441716841578-afd6c9ec7a1b?auto=format&fit=crop&w=600&q=80" alt="Reforestación">
+      <h3>Reforestación Local</h3>
+      <a href="#proyectos" class="btn-secondary">Ver más</a>
     </div>
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Corredores ecológicos">
+      <h3>Corredores Ecológicos</h3>
+      <a href="#proyectos" class="btn-secondary">Ver más</a>
+    </div>
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=600&q=80" alt="Restauración humedales">
+      <h3>Restauración de Humedales</h3>
+      <a href="#proyectos" class="btn-secondary">Ver más</a>
+    </div>
+  </div>
+</section>
+
+<!-- PARTICIPA -->
+<section id="participa" class="participa-section">
+  <h2>Participa y Haz la Diferencia</h2>
+  <div class="participa-grid">
+    <div class="participa-card">
+      <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=400&q=80" alt="Voluntariado">
+      <h4>Voluntariado</h4>
+    </div>
+    <div class="participa-card">
+      <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Donaciones">
+      <h4>Donaciones</h4>
+    </div>
+    <div class="participa-card">
+      <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=400&q=80" alt="Educación">
+      <h4>Educación</h4>
+    </div>
+  </div>
+  <a href="#contacto" class="btn-primary">INVOLÚCRATE AHORA</a>
+</section>
+
+<!-- IMPACTO -->
+<section class="impact-section">
+  <h2>Nuestro Impacto</h2>
+  <div class="impact-grid">
+    <div class="impact-card"><h3>250,000</h3><p>Árboles Plantados</p></div>
+    <div class="impact-card"><h3>1500</h3><p>Hectáreas Restauradas</p></div>
+    <div class="impact-card"><h3>10,000</h3><p>Voluntarios</p></div>
+    <div class="impact-card"><h3>30+</h3><p>Proyectos Activos</p></div>
+  </div>
+</section>
+
+<!-- EMPRESAS -->
+<section class="supporters-section">
+  <h2>Empresas que Apoyan</h2>
+  <div class="supporters-logos">
+    <img src="https://via.placeholder.com/120x60?text=Logo+1" alt="Empresa 1">
+    <img src="https://via.placeholder.com/120x60?text=Logo+2" alt="Empresa 2">
+    <img src="https://via.placeholder.com/120x60?text=Logo+3" alt="Empresa 3">
+    <img src="https://via.placeholder.com/120x60?text=Logo+4" alt="Empresa 4">
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-section">
+  <p>© 2026 SILVA · Bosques Vivos de Canarias</p>
+  <nav class="footer-nav">
+    <a href="#about">Sobre nosotros</a> |
+    <a href="#proyectos">Proyectos</a> |
+    <a href="#participa">Participa</a> |
+    <a href="#impacto">Impacto</a> | 
+    <a href="#contacto">Contacto</a>
   </nav>
+</footer>
 
-  <header class="hero hero-green">
-    <div class="container">
-      <h1>Bosques vivos para un futuro posible en Canarias</h1>
-      <p>Regeneramos los ecosistemas forestales de Canarias mediante acción técnica, participación social y compromiso a largo plazo.</p>
-      <a href="participa.html" class="cta-button">Participa</a>
-    </div>
-  </header>
-
-  <section class="intro-section">
-    <div class="container">
-      <h2>Qué hacemos</h2>
-      <p>Silva impulsa proyectos de restauración y regeneración forestal en Canarias, combinando:</p>
-      <ul>
-        <li>intervención técnica planificada</li>
-        <li>participación ciudadana y empresarial</li>
-        <li>educación ambiental aplicada</li>
-        <li>seguimiento ecológico real</li>
-      </ul>
-      <p>No plantamos árboles aislados. Regeneramos bosques como sistemas vivos.</p>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 SILVA · Bosques Vivos de Canarias</p>
-    </div>
-  </footer>
 </body>
 </html>
