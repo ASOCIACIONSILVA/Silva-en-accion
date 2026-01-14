@@ -1,95 +1,175 @@
-
+/* GENERAL RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BASE */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
   color: #1b3d1f;
-  background-color: #f5f9f6;
 }
 
-.navbar {
-  background-color: white;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.nav-container {
+/* HERO */
+.hero-section {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1900&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-menu li a {
-  color: #1b3d1f;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.nav-menu li a:hover {
-  text-decoration: underline;
-}
-
-.hero {
-  background-color: #e3f3e6;
-  padding: 4rem 2rem;
+  justify-content: center;
   text-align: center;
+  color: white;
 }
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.hero-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(27, 61, 31, 0.6);
 }
-
-.hero p {
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero-logo {
+  height: 80px;
+  margin-bottom: 20px;
+}
+.hero-section h1 {
+  font-size: 2.8rem;
+}
+.hero-section p {
   font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto 2rem;
+  margin: 15px 0;
 }
-
-.cta-button {
-  background-color: #1b3d1f;
+.btn-primary {
+  background: #1b3d1f;
   color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
 }
 
-.cta-button:hover {
-  background-color: #2e5d37;
+/* ABOUT */
+.about-section {
+  display: flex;
+  padding: 50px 10%;
+  gap: 30px;
+  align-items: center;
+}
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+.about-text h2 {
+  color: #1b3d1f;
+  margin-bottom: 10px;
 }
 
-.intro-section {
-  padding: 3rem 2rem;
-  background-color: white;
+/* PROJECTS */
+.projects-section {
+  text-align: center;
+  padding: 50px 10%;
+}
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.project-card {
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+}
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.project-card h3 {
+  margin: 15px;
+}
+.btn-secondary {
+  display: block;
+  margin: 0 15px 15px 15px;
+  background: #2e5d37;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-.intro-section h2 {
+/* PARTICIPA */
+.participa-section {
+  background: #f5f9f6;
+  text-align: center;
+  padding: 50px 10%;
+}
+.participa-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+.participa-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.participa-card h4 {
+  margin-top: 10px;
+}
+
+/* IMPACTO */
+.impact-section {
+  text-align: center;
+  padding: 50px 10%;
+  background: white;
+}
+.impact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+.impact-card {
+  background: #e3f3e6;
+  padding: 20px;
+  border-radius: 8px;
+}
+.impact-card h3 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5px;
 }
 
-.intro-section ul {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-left: 1.5rem;
+/* SUPPORTERS */
+.supporters-section {
+  text-align: center;
+  padding: 50px 10%;
+}
+.supporters-logos img {
+  margin: 10px;
+  width: 120px;
+  opacity: 0.7;
 }
 
-.footer {
-  background-color: #1b3d1f;
+/* FOOTER */
+.footer-section {
+  background: #1b3d1f;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 20px;
 }
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
